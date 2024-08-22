@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('/fonts/VAZIR-LIGHT.TTF');
+}
+
+:root {
+  --dark-clr: #262630;
+  --light-clr: #e8e8e8;
+  --red-clr: #ff2a2a;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F2F3F5] h-dvh font-vazir;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+}
+
+@layer components {
+  .nav-btn {
+    @apply w-10 h-10 flex-center rounded-lg;
+  }
+
+  .modal-btn {
+    @apply w-1/2 text-white font-bold flex-center rounded-lg;
+  }
+}
